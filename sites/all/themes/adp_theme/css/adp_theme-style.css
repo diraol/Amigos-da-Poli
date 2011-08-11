@@ -1,9 +1,19 @@
+/*
+ * CORES PADRÕES AMIGOS DA POLI
+ *
+ * AZUL ESCURO:  #069EDB
+ * AZUL CLARO:   #9CDCF9
+ * CINZA ESCURO: #58585A
+ * CINZA CLARO:  #808082
+ *
+ */
 
 /* Basic Typography & Colors
 -------------------------------------------------------------- */
 /* Add general site styling here for typography and background */
 body {
-  font-size: 75%;   /* also set in fusion_starter.info: settings[base-font-size] = font-size-12 */
+    font-family: Insterstate, Arial;
+    font-size: 75%;   /* also set in fusion_starter.info: settings[base-font-size] = font-size-12 */
 }
 
 /* Default link styles - separate a:visited for a different visited link style */
