@@ -1,18 +1,9 @@
-/*
- * CORES PADRÕES AMIGOS DA POLI
- *
- * AZUL ESCURO:  #069EDB
- * AZUL CLARO:   #9CDCF9
- * CINZA ESCURO: #58585A
- * CINZA CLARO:  #808082
- *
- */
 
 /* Basic Typography & Colors
 -------------------------------------------------------------- */
 /* Add general site styling here for typography and background */
 body {
-    font-size: 75%;   /* also set in fusion_starter.info: settings[base-font-size] = font-size-12 */
+  font-size: 75%;   /* also set in fusion_starter.info: settings[base-font-size] = font-size-12 */
 }
 
 /* Default link styles - separate a:visited for a different visited link style */
@@ -35,10 +26,6 @@ a:active {
   font-weight: normal;
   line-height: 150%;
   margin: 0;
-}
-
-.footer-message {
-  font-size: 90%;
 }
 
 
@@ -93,24 +80,10 @@ body {
 }
 
 
-/* Header Regions
+/* Header Region
 -------------------------------------------------------------- */
-/* Header Top region to the bottom of Header region */
-/* For full-width header background, add background image/color here */
-.header-group-wrapper {
-}
-
 .header-group {
 }
-
-/* Header Top region which sits above the header */
-/* Works well with inline login or inline menu block style */
-.header-top-wrapper {
-}
-
-.header-top {
-}
-
 
 /* Main Menu
 /-------------------------------------------------------------- */
@@ -163,30 +136,24 @@ body {
 }
 
 
-/*  Preface Regions
+/* Header - Search
 -------------------------------------------------------------- */
-/* The Preface Top region sits between the header and the Main Area
- (columns, sidebars, and main content).  The Preface Bottom region
- is inside the Main Area. */
-.preface-top-wrapper {
+.search-box {
 }
 
-.preface-top {
+.search-box-inner {
 }
 
-.preface-top-inner {
+.search-box-inner form#search-theme-form {
 }
 
-.preface-bottom {
-}
-
-.preface-bottom-inner {
+.search-box-inner input#edit-search-theme-form-header {
 }
 
 
-/*  Main Area (content + sidebars + preface bottom + postscript top)
+/*  Main Area (content + sidebars)
 -------------------------------------------------------------- */
-.main-wrapper {
+.main {
 }
 
 
@@ -200,39 +167,13 @@ body {
 }
 
 
-/* Content Regions
+/* Content Region
 -------------------------------------------------------------- */
-.content {
+.region-content {
 }
 
-.content-inner {
-}
-
-/* This region only appears on full node pages. It's useful for ads or other
-  content between the body of the node and its comments */
-.node-bottom {
-}
-
-/*  Postscript & Footer Regions
+/* Footer Region
 -------------------------------------------------------------- */
-.postscript-top {
-}
-
-.postscript-top-inner {
-}
-
-.postscript-bottom-wrapper {
-}
-
-.postscript-bottom {
-}
-
-.postscript-bottom-inner {
-}
-
-.footer-wrapper {
-}
-
 .footer {
 }
 
@@ -251,10 +192,8 @@ h1.title {
 /-------------------------------------------------------------- */
 /* Change unpublished and preview colors for dark background themes */
 .node-unpublished {
-  background-color: #fff4f4;
 }
 .preview .node {
-  background-color: #ffffea;
 }
 
 /* Typography for node titles */
@@ -320,13 +259,11 @@ div.content-help-inner div.help {
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error {
-  border: 1px solid #aa1144;
 }
 
 /* "New" text and required form field asterisk (default = red) */
 .marker,
 .form-required {
-  color: #aa1144;
 }
 
 
@@ -346,83 +283,6 @@ h2.block-title {
 }
 
 
-/* Tab Menus
-/-------------------------------------------------------------- */
-#content-tabs {
-  background-color: transparent;
-  float: left; /* LTR */
-  margin: 20px 0;
-  padding: 0;
-}
-
-#content-tabs ul.primary,
-#content-tabs ul.secondary {
-  border-bottom: 1px solid #000;
-  clear: both;
-  float: left; /* LTR */
-  margin: 0;
-  padding: 0 10px;
-}
-
-#content-tabs ul.secondary {
-  border-bottom: 1px solid #555;
-  margin-top: 10px;
-  text-transform: lowercase;
-}
-
-#content-tabs ul.primary li,
-#content-tabs ul.secondary li {
-  border-style: none;
-  display: inline;
-  float: left; /* LTR */
-  list-style: none;
-  margin: 0 10px;
-  padding: 0;
-}
-
-#content-tabs ul.primary li a:link,
-#content-tabs ul.primary li a:visited,
-#content-tabs ul.secondary li a:link,
-#content-tabs ul.secondary li a:visited {
-  background-color: transparent;
-  border: none;
-  color: #000;
-  float: left; /* LTR */
-  font-weight: bold;
-  margin: 0;
-  padding: 0 0 6px 0;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-#content-tabs ul.secondary li a:link,
-#content-tabs ul.secondary li a:visited {
-  color: #555;
-}
-
-#content-tabs ul.primary li a.active:link,
-#content-tabs ul.primary li a.active:visited {
-  border-bottom: 4px solid #000;
-  color: #555;
-  padding-bottom: 2px;
-}
-
-#content-tabs ul.secondary li a.active:link,
-#content-tabs ul.secondary li a.active:visited {
-  border-bottom: 4px solid #555;
-  color: #777;
-  padding-bottom: 2px;
-}
-
-#content-tabs ul.primary li a:hover,
-#content-tabs ul.primary li a:focus,
-#content-tabs ul.secondary li a:hover,
-#content-tabs ul.secondary li a:focus {
-  border-bottom: 4px solid #777;
-  color: #777;
-  padding-bottom: 2px;
-}
-
 /* Pagers
 -------------------------------------------------------------- */
 ul.pager {
@@ -433,28 +293,20 @@ ul.pager li {
 
 ul.pager a,
 ul.pager li.pager-current {
-  border-color: #333;
 }
 
 ul.pager li.pager-current {
-  background-color: #777;
-  color: #fff;
 }
 
 ul.pager a:hover,
 ul.pager a:active,
 ul.pager a:focus {
-  background-color: #777;
-  border-color: #333;
-  color: #fff;
 }
 
 /* Forms
 /-------------------------------------------------------------- */
 /* Typography and backgrounds for all form buttons */
 form input.form-submit {
-  margin: 2px;
-  padding: 3px 5px;
 }
 
 /* Hover style for form buttons */
@@ -509,30 +361,23 @@ table {
 
 /* Body of tables */
 tbody {
-  border-top: 1px solid #ccc;
 }
 
 /* Header of tables */
 thead th,
 th {
-  border-bottom: 3px solid #ccc;
 }
 
 tbody th {
-  border-bottom: 1px solid #ccc;
 }
 
 /* Alternating row background styles */
 tr.even,
 tr.even td {
-  background-color: #eee;
-  border-bottom: 1px solid #ccc;
 }
 
 tr.odd,
 tr.odd td {
-  background-color: #fff;
-  border-bottom: 1px solid #ccc;
 }
 
 td.active {
@@ -540,7 +385,6 @@ td.active {
 
 tr.drag td,
 tr.drag-previous td {
-  color: #000;
 }
 
 
@@ -560,12 +404,9 @@ tr.drag-previous td {
 /* Book
 /-------------------------------------------------------------- */
 .book-navigation .menu {
-  border-top: 1px solid #ccc;
 }
 
 .book-navigation .page-links {
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
 }
 
 
@@ -573,7 +414,6 @@ tr.drag-previous td {
 /-------------------------------------------------------------- */
 /* Style for each individual comment */
 div.comment {
-  padding: 0px;
 }
 
 /* Subject (title) of each comment */
@@ -587,21 +427,17 @@ div.comment ul.links a {
 
 /* Alternating styles for even/odd comments */
 .comments .comment.odd {
-  background-color: #fff;
 }
 
 .comments .comment.even {
-  background-color: #eee;
 }
 
 /* A special highlight style for a comment by the author of the node */
 .comments div.comment-by-author {
-  background-color: #ddd;
 }
 
 /* Comment signatures */
 .signature {
-  border-top: 1px solid #d6ddb9;
 }
 
 /* User avatars in comments */
@@ -615,32 +451,27 @@ div.comment ul.links a {
 }
 
 .forum-topic-navigation {
-  border-top: 1px solid #888;
-  border-bottom: 1px solid #888;
 }
 
 
 /* Poll
 /-------------------------------------------------------------- */
 div.poll div.bar {
-  background-color: #ddd;
 }
 
 div.poll div.bar div.foreground {
-  background-color: #999;
 }
 
 
 /* Profiles
 /-------------------------------------------------------------- */
 .profile .picture {
-  float: none;
 }
 
 /* Styles for sub-headings on user profiles */
 .profile dt {
-  background-color: #ccc;
 }
+
 
 
 /* Skinr
@@ -658,163 +489,4 @@ div.poll div.bar div.foreground {
     the widths of the grid */
   border: 3px solid #000;
   padding: 10px;
-}
-
-/*
- * MENU PRINCIPAL (Barra lateral esquerda)...................
- *
- */
-
-/* resetando list-styles e alinhando à direita */
-#block-system-main-menu ul li,
-#block-system-main-menu ul li ul li {
-    font-size: 14px;
-    text-align: right;
-    list-style-type: none;
-    list-style-image: none;
-    text-transform: lowercase;
-    text-shadow: 2px 2px 0px rgba(222,222,222,0.5);
-}
-
-#block-system-main-menu ul li {
-    margin-top: 18px;
-}
-
-#block-system-main-menu ul li ul, #block-system-main-menu ul li a, #block-system-main-menu ul li ul li {
-    margin-top: 0px;
-}
-
-#block-system-main-menu ul li a,
-#block-system-main-menu ul li a:visited {
-    font-weight: bold;
-    color: #58585A;
-}
-
-#block-system-main-menu ul li a:after {
-    content: " >";
-}
-
-#block-system-main-menu ul li ul li a {
-    font-weight: normal;
-    color: #808082;
-}
-
-#block-system-main-menu ul li ul li a:after {
-    content: "";
-}
-
-#block-system-main-menu ul li a.active, 
-#block-system-main-menu ul li a.active:after,
-#block-system-main-menu ul li a.active-trail, 
-#block-system-main-menu ul li a.active-trail:after {
-    color: #069EDB;
-    content: " <";
-}
-
-#block-system-main-menu ul li ul li a.active,
-#block-system-main-menu ul li ul li a.active:after  {
-    content: " <";
-    color: #069EDB;
-}
-
-/*
- * SELETOR DE IDIOMAS
- *
- */
-#block-locale-language { text-align: right; margin: 0px; } 
-#block-locale-language h2 { display: none; visibility: hidden; height: 0px;}
-.language-switcher-locale-url,
-.language-switcher-locale-url li { 
-    display:inline; 
-    list-style-type: none;
-    list-style-image: none;
-}
-.language-switcher-locale-url li:before {
-    content: "   ";
-}
-
-/*
- * Banner da página inicial
- *
- */
-ddblock
-#ddblock-1, .ddblock-contents {
-    position: absolute;
-    width: 740px;
-}
-#ddblock-1 #ddblock-number-pager-1 {
-    display: list-item;
-    list-style-type: none;
-    list-style-image: none;
-    position: relative;
-    height: 192px;
-    width: 20px;
-    float:right;
-    right: 0px;
-    bottom: 0px;
-    z-index:1;
-}
-
-#ddblock-1 #ddblock-number-pager-1 ul li {
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-#ddblock-1 #ddblock-number-pager-1 ul li a {
-    line-height: 64px;
-    font-size: 20px;
-    height: 64px;
-    width: 100%;
-}
-
-#ddblock-number-pager-1 ul li a.pager-link {
-    background-color: #9CDCF9;
-    color: #58585A;
-    text-shadow: 1px 2px 0px rgba(255,255,255,0.8);
-    -webkit-border-top-right-radius: 20px;
-    -webkit-border-bottom-right-radius: 20px;
-    -moz-border-radius-topright: 20px;
-    -moz-border-radius-bottomright: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.80);
-    -moz-box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.80);
-    -webkit-box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.80);
-
-}
-
-#ddblock-number-pager-1 ul li a.activeSlide {
-    background-color: #069EDB;
-    color: #FFFFFF;
-    text-shadow: 1px 2px 0px rgba(000,000,000,0.8);
-    -webkit-border-top-right-radius: 20px;
-    -webkit-border-bottom-right-radius: 20px;
-    -moz-border-radius-topright: 20px;
-    -moz-border-radius-bottomright: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    -shadow: 5px 6px 8px rgba(0, 0, 0, 0.80);
-    -moz-box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.80);
-    -webkit-box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.80);
-}
-
-#ddblock-1 #ddblock-number-pager-1 ul, #ddblock-1 #ddblock-number-pager-1 ul li, #ddblock-1 #ddblock-number-pager-1 ul li a {
-    border: none;
-    font-size: 16px;
-    z-index:1
-}
-
-#ddblock-1 #ddblock-container, div.block-ddblock .ddblock-container {
-    clear: none;
-    position: relative;
-    float:left;
-    width: 700px;
-    height: 192px;
-    overflow: hidden;
-    left: 0px;
-    top: 0px;
-    z-index:0;
-    box-shadow: 10px 6px 8px rgba(0, 0, 0, 0.80);
-    -moz-box-shadow: 10px 6px 8px rgba(0, 0, 0, 0.80);
-    -webkit-box-shadow: 10px 6px 8px rgba(0, 0, 0, 0.80);
 }
