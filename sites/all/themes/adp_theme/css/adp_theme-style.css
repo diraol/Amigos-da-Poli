@@ -666,7 +666,7 @@ div.poll div.bar div.foreground {
  *
 */
 #content p { font-family: Arial; } 
-
+.breadcrumbs { display:none; visibility:hidden; }
 /*
  * MENU PRINCIPAL (Barra lateral esquerda)...................
  *
