@@ -98,6 +98,8 @@ body {
 /* Header Top region to the bottom of Header region */
 /* For full-width header background, add background image/color here */
 .header-group-wrapper {
+    float:left;
+    margin-top: -55px;
 }
 
 .header-group {
@@ -106,6 +108,9 @@ body {
 /* Header Top region which sits above the header */
 /* Works well with inline login or inline menu block style */
 .header-top-wrapper {
+    float: left;
+    margin-top: 20px;
+    text-align: right;
 }
 
 .header-top {
@@ -661,17 +666,19 @@ div.poll div.bar div.foreground {
 }
 
 
-/*
- * Personalizando para o amigos da Poli!
- *
-*/
+/******************************************************************************/
+/*                                                                            */
+/*                                                                            */
+/*                   Personalizando para o amigos da Poli!                    */
+/*                                                                            */
+/*                                                                            */
+/******************************************************************************/
 #content p { font-family: Arial; } 
 .breadcrumbs { display:none; visibility:hidden; }
-/*
- * MENU PRINCIPAL (Barra lateral esquerda)...................
- *
- */
 
+/*******************************************/
+/* MENU PRINCIPAL (Barra lateral esquerda) */
+/*******************************************/
 /* resetando list-styles e alinhando à direita */
 #block-system-main-menu ul { margin-left: 1.5em; }
 
@@ -726,12 +733,33 @@ div.poll div.bar div.foreground {
     color: #069EDB;
 }
 
-/*
- * SELETOR DE IDIOMAS
- *
- */
-#block-locale-language { text-align: right; margin: 0px; } 
-#block-locale-language h2 { display: none; visibility: hidden; height: 0px;}
+/******************/
+/* Bloco de busca */
+/******************/
+#block-search-form {
+    width: 220px;
+    float: right;
+    margin-bottom: 1.1em;
+}
+
+#block-search-form h2 { 
+    display: none; 
+}
+
+/**********************/
+/* SELETOR DE IDIOMAS */
+/**********************/
+#block-locale-language {
+    float: right;
+    text-align: right;
+    width: 500px;
+    margin-bottom: 1.1em;
+} 
+#block-locale-language h2 { 
+    display: none; 
+    visibility: 
+    hidden; height: 0px;
+}
 .language-switcher-locale-url,
 .language-switcher-locale-url li { 
     display:inline; 
@@ -742,11 +770,10 @@ div.poll div.bar div.foreground {
     content: "  ";
 }
 
-/*
- * Banner da página inicial
- *
- */
-ddblock
+/****************************/
+/* Banner da página inicial */
+/****************************/
+#ddblock
 #ddblock-1, .ddblock-contents {
     position: absolute;
     width: 740px;
@@ -827,3 +854,49 @@ ddblock
     -moz-box-shadow: 10px 6px 8px rgba(0, 0, 0, 0.80);
     -webkit-box-shadow: 10px 6px 8px rgba(0, 0, 0, 0.80);
 }
+
+/************************/
+/* Página Colaboradores */
+/************************/
+#block-views-colaboradores-block,
+#block-views-colaboradores-block_1,
+#block-views-colaboradores-block_2,
+.view-colaboradores {
+    float: none;
+    width: 500px;
+}
+
+#block-views-colaboradores-block .block-title,
+#block-views-colaboradores-block_1 .block-title,
+#block-views-colaboradores-block_2 .block-title {
+    background-color: #808082;
+    font-size: 110%;
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+}
+
+#block-views-colaboradores-block .views-field-field-logotipo,
+#block-views-colaboradores-block_1 .views-field-field-logotipo,
+#block-views-colaboradores-block_2 .views-field-field-logotipo {
+    padding:1px;
+    border:1px solid #021a40;
+}
+
+.bloco-ouro .views-row,
+.bloco-prata .views-row,
+.bloco-bronze .views-row {
+    float:left;
+    margin: 5px;
+}
+/*
+ * CORES PADRÕES AMIGOS DA POLI
+ *
+ * AZUL ESCURO:  #069EDB
+ * AZUL CLARO:   #9CDCF9
+ * CINZA ESCURO: #58585A
+ * CINZA CLARO:  #808082
+ *
+ */
+
+
