@@ -737,7 +737,7 @@ div.poll div.bar div.foreground {
     list-style-image: none;
 }
 .language-switcher-locale-url li:before {
-    content: "   ";
+    content: "  ";
 }
 
 /*
