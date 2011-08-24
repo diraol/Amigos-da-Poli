@@ -1,0 +1,33 @@
+name = Amigos da Poli
+description = Tema do Amigos da Poli baseado no 'European Theme for OpenPublic'
+base theme = openpublic_eu
+core = 7.x
+
+; Basic styles used in many places across the site
+stylesheets[all][]   = css/adp_modern-style.css
+
+regions[sidebar_first] = First sidebar
+regions[sidebar_second] = Second sidebar
+regions[inner_first] = First Inner
+regions[inner_second] = Second Inner
+regions[content_prefix] = On Top of Content
+regions[content] = Content
+regions[content_suffix] = Underneath the Content
+regions[header] = Header
+regions[footer] = Footer
+regions[footer_social] = Social Footer
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[help] = Help
+
+features[] = favicon
+features[] = main_menu
+features[] = logo
+features[] = name
+
+; Information added by drupal.org packaging script on 2011-04-06
+version = "7.x-1.0"
+core = "7.x"
+; project = "openpublic_eu"
+datestamp = "1302086817"
+

@@ -1,0 +1,115 @@
+/**************************/
+/* BOX DE BUSCA + IDIOMAS */
+/**************************/
+#header-right-content {
+	float: right;
+	min-width: 292px;
+    width: auto;
+}
+
+#header-search {
+	border: 1px solid #3E76B0;
+	margin: 35px 12px 0 0;
+	padding: 10px;
+	min-width: 270px;
+    width: auto;
+}
+
+/**********************/
+/* SELETOR DE IDIOMAS */
+/**********************/
+#block-locale-language {
+    float: right;
+    text-align: right;
+    margin-bottom: 1.0em;
+    text-align: center;
+    width: 100%;
+} 
+#block-locale-language h2 { 
+    display: none; 
+    visibility: 
+    hidden;
+    height: 0px;
+}
+.language-switcher-locale-url,
+.language-switcher-locale-url li { 
+    display:inline; 
+    list-style-type: none;
+    list-style-image: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.language-switcher-locale-url li a {
+    color: #FFF;
+}
+.language-switcher-locale-url li .active {
+    color: rgb(156,220,249);
+}
+.language-switcher-locale-url li:before {
+    content: "  ";
+}
+
+/****************************/
+/* Banner da página inicial */
+/****************************/
+#block-ddblock-1 {
+    display: block;
+    height: 196px;
+    width: 580px;
+}
+
+#ddblock-1, .ddblock-contents {
+    position: absolute;
+}
+
+#ddblock-1 #ddblock-number-pager-1 ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#ddblock-1 #ddblock-number-pager-1 ul li a {
+    line-height: 64px;
+    font-size: 20px;
+    height: 64px;
+    width: 100%;
+}
+
+#ddblock-1 #ddblock-container,
+div.block-ddblock .ddblock-container {
+    clear: none;
+    position: relative;
+    float:left;
+    width: 580px;
+    height: 192px;
+    overflow: hidden;
+    left: 0px;
+    top: 0px;
+    z-index:0;
+    box-shadow: 10px 6px 8px rgba(0, 0, 0, 0.80);
+    -moz-box-shadow: 10px 6px 8px rgba(0, 0, 0, 0.80);
+    -webkit-box-shadow: 10px 6px 8px rgba(0, 0, 0, 0.80);
+}
+
+.ddblock-container,
+.ddblock-container .slider,
+.ddblock-container .slider .slide,
+.ddblock-container .slider .slide img {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+#block-block-3 {
+    width: 215px;
+    float: right;
+    text-align: justify;
+}
+
+#block-block-3 h2 {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+/***********************************/
+/* MENU PRINCIPAL (Navigation Bar) */
+/***********************************/
+

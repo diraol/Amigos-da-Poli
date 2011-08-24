@@ -1,0 +1,397 @@
+/**************************/
+/* BOX DE BUSCA + IDIOMAS */
+/**************************/
+#header-right-content {
+	float: right;
+	min-width: 292px;
+    width: auto;
+}
+
+#header-search {
+	border: 1px solid #3E76B0;
+	margin: 35px 12px 0 0;
+	padding: 10px;
+	min-width: 270px;
+    width: auto;
+}
+
+/**********************/
+/* SELETOR DE IDIOMAS */
+/**********************/
+#block-locale-language {
+    float: right;
+    text-align: right;
+    margin-bottom: 1.0em;
+    text-align: center;
+    width: 100%;
+} 
+#block-locale-language h2 { 
+    display: none; 
+    visibility: 
+    hidden;
+    height: 0px;
+}
+.language-switcher-locale-url,
+.language-switcher-locale-url li { 
+    display:inline; 
+    list-style-type: none;
+    list-style-image: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.language-switcher-locale-url li a {
+    color: #FFF;
+}
+.language-switcher-locale-url li .active {
+    color: rgb(156,220,249);
+}
+.language-switcher-locale-url li:before {
+    content: "  ";
+}
+
+/****************************/
+/* Banner da página inicial */
+/****************************/
+#block-ddblock-1 {
+    display: block;
+    height: 196px;
+    width: 580px;
+}
+
+#ddblock-1, .ddblock-contents {
+    position: absolute;
+}
+
+#ddblock-1 #ddblock-number-pager-1 ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#ddblock-1 #ddblock-number-pager-1 ul li a {
+    line-height: 64px;
+    font-size: 20px;
+    height: 64px;
+    width: 100%;
+}
+
+#ddblock-1 #ddblock-container,
+div.block-ddblock .ddblock-container {
+    clear: none;
+    position: relative;
+    float:left;
+    width: 580px;
+    height: 192px;
+    overflow: hidden;
+    left: 0px;
+    top: 0px;
+    z-index:0;
+    box-shadow: 10px 6px 8px rgba(0, 0, 0, 0.80);
+    -moz-box-shadow: 10px 6px 8px rgba(0, 0, 0, 0.80);
+    -webkit-box-shadow: 10px 6px 8px rgba(0, 0, 0, 0.80);
+}
+
+.ddblock-container,
+.ddblock-container .slider,
+.ddblock-container .slider .slide,
+.ddblock-container .slider .slide img {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+#block-block-3 {
+    width: 215px;
+    float: right;
+    text-align: justify;
+}
+
+#block-block-3 h2 {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+/***********************************/
+/* MENU PRINCIPAL (Navigation Bar) */
+/***********************************/
+/* exibindo todos os blocos */
+
+#navigation ul, #navigation li, #navigation a, #navigation ul li, #navigation ul li ul, #navigation ul li ul li, #navigation ul li ul li {
+    display: block;
+    visibility: visible;
+}
+
+/* Ajustando tamanho e posição dos submenus */
+
+#navigation ul li ul {
+    width: 9999px;
+    left: -1000px;
+    padding-left: 1015px;
+    background-color: #3E76B0;
+}
+
+/* efeitos de transição */
+
+#navigation ul, #navigation li, #navigation a, #navigation ul li, #navigation ul li a, #navigation ul li ul, #navigation ul li ul li, #navigation ul li ul li a {
+    /**
+    -webkit-transition: all 0.4 ease-out;
+    -moz-transition: all 0.4 ease-out;
+    -o-transition: all 0.4 ease-out;
+    transition: all 0.4 ease-out;
+    /*/
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+    -webkit-transition: all 0.9s ease-out;
+    -moz-transition: all 0.9s ease-out;
+    -o-transition: all 0.9s ease-out;
+    transition: all 0.9s ease-out;
+    /**/
+}
+
+/* garantindo o submenu ativo como visível por padrão */
+
+#navigation li.active-trail ul, #navigation li.active-trail ul li, #navigation li.active-trail ul li a {
+    z-index: 1;
+    opacity: 1;
+}
+
+/* mantendo o 'a' dos submenus escondido por padrão */
+
+#navigation li li a {
+    opacity: 0;
+}
+
+/* disparando evento */
+
+#navigation li:hover > ul, #navigation li:hover > li, #navigation li:hover > a, #navigation li:hover > ul li, #navigation li:hover > ul li a {
+    z-index: 2;
+    opacity: 1;
+}
+
+/* FRONT PAGE */
+#navigation #front-menu-top ul li ul {
+    top: 0px;
+    visibility: hidden;
+    z-index: -100;
+    background: none;
+}
+
+#navigation #front-menu-top ul li ul li,
+#navigation #front-menu-top ul li ul li a {
+    visibility: hidden;
+}
+
+#navigation #front-menu-top ul.menu li:hover > ul.menu {
+    top:41px;
+    z-index:0;
+    visibility: visible;
+    background-color: #3E76B0;
+}
+
+#navigation #front-menu-top ul.menu li:hover > ul.menu li.leaf, 
+#navigation #front-menu-top ul.menu li:hover > ul.menu li.leaf a {
+    visibility: visible;
+}
+
+/* Ajuste na página inicial (front) para o menu não sobrepor o conteúdo */
+#front-content {
+    height: 30px;
+    background: white;
+}
+
+/*******************/
+/* MENU ("Rodapé") */
+/*******************/
+/* Primeiro nível */
+/* Setando tamanho da div */
+#footer-nav {
+    width: 100%;
+    text-align: center;
+}
+
+#footer-nav ul.menu {
+    margin: 0 auto 0 auto;
+    padding: 0;
+    min-width: 0;
+    width: 100%;
+}
+
+/** Resetando margens e paddings **/
+#footer-nav li,
+#footer-nav li.leaf li,
+#footer-nav li ul.menu,
+#footer-nav ul.menu li ul.menu li {
+    margin: 0;
+    padding: 0;
+    min-width: 0px;
+    width: auto;
+}
+
+/** Ajustando o tamanho do menu como 100% */
+#footer-nav ul.menu {
+    width: 100%;
+}
+
+#footer-nav ul.menu li.leaf, 
+#footer-nav ul.menu li.expanded, 
+#footer-nav ul.menu li.leaf, 
+#footer-nav ul.menu li.leaf {
+    margin: 0 0 0 15px;
+    min-width: 0px;
+}
+
+/* Ajustando efeito em todos os elementos */
+#footer-nav ul,
+#footer-nav li {
+    -webkit-transition: all 0.9s ease-in-out;
+    -moz-transition: all 0.9s ease-in-out;
+    -o-transition: all 0.9s ease-in-out;
+    transition: all 0.9s ease-in-out;
+}
+
+#footer-nav a,
+#footer-nav a::before,
+#footer-nav a.active,
+#footer-nav a.active::before {
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+#footer-nav ul li a,
+#footer-nav ul li a:visited {
+    color: #B3B3B5;
+    font-size: 14px;
+    text-align: left;
+    font-weight: bold;
+    list-style-type: none;
+    list-style-image: none;
+    text-transform: lowercase;
+    text-shadow: 1px 1px 0 #0A1A2D;
+}
+
+/* COMEÇANDO O SUBMENU */
+/* Colando o primeiro item do submenu no primeiro nível */
+#footer-nav ul li a,
+#footer-nav ul li ul,
+#footer-nav ul li ul li {
+    margin-top: 0px;
+}
+
+/* fazendo com que os submenus apareçam "apagados" */
+#footer-nav li.expanded ul {
+    /* Valores a serem mudados por meio do Hover no li acima */
+    opacity: 0.30; /* mudar para 1 quando 'ativo' */
+    padding: 0 0 0 5px;
+}
+
+/* Tamanho do texto nos submenus */
+#footer-nav li.expanded ul.menu li.leaf a {
+    font-size: 13px;
+}
+
+/* adicionando o marcador ">" nos itens (menu e submenu) ativos
+    e mudnado a cor dos itens ativos para destaque */
+#footer-nav a.active,
+#footer-nav a.active:visited,
+#footer-nav a.active::before {
+    color: #DDD;
+    content: "> ";
+}
+
+/* colorindo de azul claro quando o mouse passa por cima */
+#footer-nav ul li a.active:hover,
+#footer-nav ul li a:hover,
+#footer-nav a.active:hover::before {
+    color: #9CDCF9;
+}
+
+/* Setando submenu ativo como visível */
+/** deixando o submenu (inteiro) que contém item ativo
+                mais visível que os outros submenus **/
+#footer-nav li.active-trail > ul {
+    opacity: 0.8;
+}
+
+/** configurando o subitem ativo para ficar mais aparente que os outros **/
+#footer-nav li.active-trail ul.menu li.leaf a.active {
+    opacity: 1;
+}
+
+/** configurando itens não ativos da 'trilha ativa' para 
+                ficarem mais transparentes que os ativos **/
+#footer-nav li.active-trail ul.menu li.leaf a {
+    opacity: 0.6;
+}
+
+/* "evento" para mostrar os submenus quando o menu é selecionado */
+#footer-nav ul.menu li.expanded:hover > ul.menu,
+#footer-nav ul.menu li.expanded:hover > ul.menu li,
+#footer-nav ul.menu li.expanded:hover > ul.menu li.leaf a,
+#footer-nav ul.menu li.expanded:hover > ul.menu li.leaf a.active {
+    opacity: 1;
+}
+
+/**********************/
+/* Rodapé - Copyright */
+/**********************/
+#closure .region-footer {
+    width: 100%;
+    color: #CCC;
+    font-size: 0.9em;
+}
+#closure .region-footer a,
+#closure .region-footer a:visited {
+    color: #9CDCF9;
+}
+
+#closure .region-footer a:hover {
+    color: #FFF;
+}
+
+/*******************/
+/* Rodapé - Social */
+/*******************/
+#footer-social {
+    display:inline;
+}
+
+#block-follow-site {
+    float:right;
+    width: auto;
+    margin-bottom: 3px;
+}
+
+#block-follow-site h2 {
+    font-size: 14px;
+    color: #CCC;
+    margin-bottom: 0.5em;
+}
+
+a.follow-link {
+    font-size:0px; 
+    letter-spacing: 0px;
+    word-spacing: 0px;
+
+}
+div.follow-links {
+    display: inline;
+    float: right;
+}
+.follow-link {
+    float: right;
+}
+
+
+/*
+ * CORES PADRÕES AMIGOS DA POLI
+ *
+ * AZUL ESCURO:  #069EDB
+ * AZUL CLARO:   #9CDCF9
+ * CINZA ESCURO: #58585A
+ * CINZA CLARO:  #808082
+ *
+ */
+
+

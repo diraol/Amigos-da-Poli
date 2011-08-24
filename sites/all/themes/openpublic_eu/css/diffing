@@ -1,0 +1,8 @@
+208c208
+< 	min-width: 292px;
+---
+> 	width: 292px;
+215c215
+< 	min-width: 270px;
+---
+> 	width: 270px;
